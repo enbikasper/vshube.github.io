@@ -1,0 +1,33 @@
+.portfolio ul,
+.portfolio li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.portfolio li{
+	display: inline-block;
+	width: 330px;
+	position: relative;
+}
+.portfolio img{
+	max-width: 100%;
+	display: inline-block;
+}
+.descr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 415px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	padding-top: 80px;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: all .5%;
+	-o-transition: all .5%;
+	transition: all .5%;
+}
+.portfolio li:hover .descr {
+	opacity: 1;
+}
